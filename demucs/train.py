@@ -18,12 +18,12 @@ from omegaconf import OmegaConf
 import torch
 from torch.utils.data import ConcatDataset
 
-from . import distrib
-from .wav import get_wav_datasets, get_musdb_wav_datasets
-from .demucs import Demucs
-from .hdemucs import HDemucs
-from .repitch import RepitchedWrapper
-from .solver import Solver
+import distrib
+from wav import get_wav_datasets, get_musdb_wav_datasets
+from demucs import Demucs
+from hdemucs import HDemucs
+from repitch import RepitchedWrapper
+from solver import Solver
 
 logger = logging.getLogger(__name__)
 

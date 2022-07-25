@@ -7,9 +7,11 @@
 Main training for the Track A MDX models.
 """
 
-from ._explorers import MyExplorer
-from .mdx import TRACK_A
-from ..train import main
+from _explorers import MyExplorer
+from mdx import TRACK_A
+import sys
+sys.path.append("..")
+from train import main
 
 
 @MyExplorer

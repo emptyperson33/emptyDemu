@@ -16,9 +16,9 @@ from torch import nn
 from torch.nn import functional as F
 import tqdm
 
-from .demucs import Demucs
-from .hdemucs import HDemucs
-from .utils import center_trim, DummyPoolExecutor
+from demucs import Demucs
+from hdemucs import HDemucs
+from utils import center_trim, DummyPoolExecutor
 
 Model = tp.Union[Demucs, HDemucs]
 
